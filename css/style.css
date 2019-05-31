@@ -26,7 +26,7 @@ p {
 img {
   /* width: auto; */
   /* height:100%; */
-  max-width: 350px;
+  max-width: 17rem;
   max-height: 100%;
   border-radius: 3px;
 }
@@ -49,11 +49,12 @@ img {
   height:60%;
   overflow: hidden;
   position: relative;
+  padding:1rem 0;
   /* background:green; */
 }
 
 .text {
-  padding-top:1rem;
+  /* padding-top:1rem; */
   font-size: 2rem;
   line-height: 2.5rem;
   width:100%;
