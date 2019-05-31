@@ -28,7 +28,7 @@ img {
   /* height:100%; */
   max-width: 350px;
   max-height: 100%;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .construction {
@@ -55,6 +55,7 @@ img {
 .text {
   padding-top:1rem;
   font-size: 2rem;
+  font-weight: lighter;
   line-height: 2.5rem;
   width:100%;
   position: relative;
