@@ -5,7 +5,7 @@
 body {
   margin:0;
   padding:0;
-  background:#2e2a23;
+  background:#261f1d;
   font-family: sans-serif;
   overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ a {
 }
 
 a:hover{
-  color:rgb(255, 189, 77);
+  color:#EA5D36;
 }
 
 p {
@@ -50,6 +50,8 @@ img {
   overflow: hidden;
   position: relative;
   padding:1rem 0;
+  display: flex;
+  justify-content: center;
   /* background:green; */
 }
 
