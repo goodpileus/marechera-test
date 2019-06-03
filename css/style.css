@@ -9,7 +9,6 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   color:#E8E1D0;
-
 }
 
 a {
@@ -131,14 +130,16 @@ img {
 
 .folio {
   border-top:1px solid #E8E1D0;
-  padding-top:2rem;
+  padding-top:1.5rem;
   font-size: .8rem;
   line-height: 1.3rem;
   display:flex;
   justify-content: space-around;
   flex-flow: column;
-  max-width:400px;
-  margin:5rem auto 1rem auto;
+  /* max-width:400px; */
+  margin:5rem auto auto;
+  /* background: #E8E1D0;
+  color:#261f1d; */
 }
 
 .folio-name {
