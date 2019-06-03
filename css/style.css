@@ -110,7 +110,10 @@ img {
   text-align: left;
   font-size: 1.1rem;
   line-height: 1.7rem;
-  margin:0 1rem;
+  padding:4rem 1rem 1rem 1rem;
+  /* margin:0 1rem; */
+  background:#E8E1D0;
+  color:#261f1d;
 }
 
 .parts {
@@ -137,7 +140,7 @@ img {
   justify-content: space-around;
   flex-flow: column;
   /* max-width:400px; */
-  margin:5rem auto auto;
+  margin:0 auto auto;
   /* background: #E8E1D0;
   color:#261f1d; */
 }
