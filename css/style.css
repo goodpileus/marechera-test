@@ -31,7 +31,7 @@ i {
 h1 {
   font-size: 1.8rem;
   font-weight: normal;
-  line-height: 2.5rem;
+  line-height: 2.3rem;
   margin:0;
 }
 
@@ -45,9 +45,7 @@ h2 {
 img {
   /* width: auto; */
   /* height:100%; */
-  max-width: 17rem;
   /* max-height: 100%; */
-  border-radius: 3px;
 }
 
 .text-c {
@@ -77,6 +75,11 @@ img {
   /* background:green; */
 }
 
+.image img{
+  border-radius: 3px;
+  max-width: 17rem;
+}
+
 .text {
   /* padding-top:1rem; */
   font-size: 2.2rem;
@@ -87,9 +90,21 @@ img {
   /* background:red; */
 }
 
-.small {
-  font-size:1rem;
-  line-height: 1rem;
+.sub-head {
+  display:flex;
+  flex-flow: column;
+  width:100%;
+  align-items: center;
+  margin: 6rem 0;
+}
+
+.sub-head img{
+  max-width:17rem;
+}
+
+.vert-line {
+  height:6rem;
+  border-right:2px dashed #E8E1D0;
 }
 
 .about {
@@ -99,23 +114,37 @@ img {
   margin:0 1rem;
 }
 
-.header {
+.parts {
+  font-size:1.3rem;
 }
 
-.parts {
+.parts p{
+  margin-bottom: 3rem;
+}
 
+.parts h3 {
+  font-weight: normal;
+  font-size: inherit;
+  font-style: italic;
+  margin-bottom: .5rem;
 }
 
 .folio {
-  font-size: 1rem;
+  font-size: .8rem;
   display:flex;
   justify-content: space-around;
   flex-flow: column;
-  margin-top:3rem;
+  max-width:400px;
+  margin:6rem auto 1rem auto;
+}
+
+.folio-name {
+    font-size:1rem;
+    /* font-family: times, serif; */
 }
 
 .hi {
-  background:#EA5D36;
+  color:#EA5D36;
 }
 
 @media (min-width:800px) {
@@ -123,9 +152,14 @@ img {
     justify-content: center;
   }
 
+  .image img{
+    border-radius: 3px;
+    /* max-width: 40rem; */
+  }
+
   .about {
     margin: 0 auto;
-    width:700px;
+    width:690px;
   }
 
   .folio {
