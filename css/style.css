@@ -130,12 +130,15 @@ img {
 }
 
 .folio {
+  border-top:1px solid #E8E1D0;
+  padding-top:2rem;
   font-size: .8rem;
+  line-height: 1.3rem;
   display:flex;
   justify-content: space-around;
   flex-flow: column;
   max-width:400px;
-  margin:6rem auto 1rem auto;
+  margin:5rem auto 1rem auto;
 }
 
 .folio-name {
