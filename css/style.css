@@ -51,6 +51,17 @@ img {
   text-align: center;
 }
 
+.scroll-ball {
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom:-10px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#e8e1d0;
+}
+
 .construction {
   min-width:100vw;
   min-height:100vh;
@@ -94,11 +105,12 @@ img {
   flex-flow: column;
   width:100%;
   align-items: center;
-  margin: 6rem 0;
+  margin: 6rem 0 2rem 0;
 }
 
 .sub-head img{
-  max-width:17rem;
+  width:25rem;
+  max-width: 100vw;
 }
 
 .vert-line {
@@ -128,18 +140,18 @@ img {
   font-weight: normal;
   font-size: inherit;
   font-style: italic;
-  margin-bottom: .5rem;
+  margin-bottom: .2rem;
 }
 
 .folio {
-  border-top:1px solid #E8E1D0;
+  /* border-top:1px solid #E8E1D0; */
   padding-top:1.5rem;
   font-size: .8rem;
   line-height: 1.3rem;
   display:flex;
   justify-content: space-around;
   flex-flow: column;
-  /* max-width:400px; */
+  max-width:500px;
   margin:0 auto auto;
   /* background: #E8E1D0;
   color:#261f1d; */
