@@ -54,12 +54,14 @@ img {
 .scroll-ball {
   width:20px;
   height:20px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  background-image: url(../img/dot.gif);
   position: absolute;
-  bottom:-10px;
+  /* bottom:-10px; */
+  top:100vh;
   left:50%;
   transform:translateX(-50%);
-  background:#e8e1d0;
+  /* background:#e8e1d0; */
 }
 
 .construction {
