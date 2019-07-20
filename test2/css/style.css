@@ -111,12 +111,14 @@ h2 {
   align-items: center;
   flex-direction: column;
   padding:1rem;
+  background-size: cover;
 }
 
 .about {
   /* min-height:100vh; */
   /* text-align: left; */
   text-align: justify;
+
   font-size: 1.1rem;
   line-height: 1.7rem;
   padding:0 1rem;
@@ -239,6 +241,7 @@ h2 {
 
   .feature {
     width:50%;
+
   }
 
   .shrink1 {
