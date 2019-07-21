@@ -150,12 +150,15 @@ li {
 }
 
 .about {
+  min-height: 100vh;
   text-align: justify;
   font-size: 1.1rem;
   line-height: 1.7rem;
   padding-top:2rem;
   padding-bottom:5rem;
   align-self: flex-start;
+  display: flex;
+  align-items: center;
 }
 
 .about p {
