@@ -173,22 +173,22 @@ li {
 .about {
   min-width:100%;
   /* min-height: 100vh; */
-  text-align: justify;
   font-size: 1.1rem;
   line-height: 1.7rem;
-  padding-top:4rem;
-  padding-bottom:5rem;
+  padding:4rem 1rem 5rem 1rem;
   align-self: flex-start;
   justify-content: center;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--black);
-  background-image: url('../img/idol.gif');
-  background-size: contain;
+  /* background-color: var(--black);
+  background-image: url('../img/idol.gif'); */
+  /* background-size: contain; */
+  display: none;
 }
 
 .about p {
+  text-align: justify;
   width: auto;
 }
 
@@ -207,8 +207,8 @@ li {
 }
 
 .folio {
-  padding-top:4rem;
-  padding-bottom:2rem;
+  padding-top:3rem;
+  padding-bottom:1rem;
   font-size: .8rem;
   line-height: 1.3rem;
   display:flex;
@@ -218,11 +218,10 @@ li {
   text-align: center;
   width:100%;
   max-width:42rem;
+  /* background: lightgreen; */
 }
 
 .folio p {
-  margin: 0;
-  width:33%;
   text-align: center;
 }
 
@@ -293,6 +292,7 @@ li {
   }
 
   .folio p {
-    max-width:48%;
+    margin: 0;
+    width:33%;
   }
 }
