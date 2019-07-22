@@ -34,7 +34,7 @@ a:hover{
 
 p {
   margin:.5rem;
-  max-width: 690px;
+  max-width: 42rem;
 }
 
 i {
@@ -54,8 +54,8 @@ h1 {
 
 h2 {
   font-size:1.2rem;
-  font-weight: lighter;
-  margin: 1rem 0 0 0;
+  font-weight: normal;
+  margin: .5rem 0 1.5rem 0;
   font-style: italic;
 }
 
@@ -145,34 +145,25 @@ li {
   max-height: 100vh;
   padding-left: 1rem;
   padding-right:1rem;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: column; */
-  /* padding:5px; */
-  /* background-size: cover; */
-  /* overflow: hidden; */
-  /* position: relative; */
 }
 
 .float {
-  width:100vw;
   position: fixed;
+  width:100%;
   bottom:2rem;
-  left:0;
   animation: text 30s ease-in-out alternate infinite;
   z-index: 999999;
   text-align: center;
 }
 
 .num {
+  /* margin: 0 auto; */
+  /* max-width: 10rem; */
   /* display: block; */
   font-size: 2rem;
   font-family: sans-serif;
   padding:1rem;
   border-radius: 20px;
-  /* width:100%; */
 }
 
 .image-panel:hover {
@@ -180,15 +171,21 @@ li {
 }
 
 .about {
-  min-height: 100vh;
+  min-width:100%;
+  /* min-height: 100vh; */
   text-align: justify;
   font-size: 1.1rem;
   line-height: 1.7rem;
-  padding-top:2rem;
+  padding-top:4rem;
   padding-bottom:5rem;
   align-self: flex-start;
+  justify-content: center;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  background-color: var(--black);
+  background-image: url('../img/idol.gif');
+  background-size: contain;
 }
 
 .about p {
@@ -210,19 +207,23 @@ li {
 }
 
 .folio {
-  padding-top:2rem;
+  padding-top:4rem;
   padding-bottom:2rem;
   font-size: .8rem;
   line-height: 1.3rem;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: column;
   z-index: 9999;
   text-align: center;
+  width:100%;
+  max-width:42rem;
 }
 
 .folio p {
-  width:100%;
+  margin: 0;
+  width:33%;
+  text-align: center;
 }
 
 .folio-name {
@@ -266,7 +267,7 @@ li {
 
 @media (min-width:800px) {
   h1 {
-    max-width:690px;
+    max-width:42rem;
   }
 
   .feature {
@@ -281,11 +282,12 @@ li {
 
   .about {
     /* margin: 0 auto; */
-    max-width:35rem;
+    max-width:42rem;
   }
 
   .folio {
     flex-flow: row;
+    justify-content: space-between;
     /* flex-wrap: wrap; */
     /* justify-content: flex-start; */
   }
