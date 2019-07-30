@@ -16,7 +16,7 @@
 }
 
 html {
-  overflow: hidden;
+  overflow-y: hidden;
   scroll-behavior: smooth;
 }
 
@@ -115,7 +115,7 @@ li {
   padding:0;
   /* justify-content: center; */
   /* align-items: center; */
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .slide {
@@ -164,10 +164,6 @@ li {
   animation: text-color 30s ease-in-out alternate infinite;
 }
 
-.show {
-  display: block;
-}
-
 .content p::selection, h1::selection, br::selection {
   background:transparent;
 }
@@ -206,6 +202,14 @@ img::selection {
   border-radius: 20px;
 }
 
+.about-btn {
+  cursor:pointer;
+}
+
+.float div::selection {
+  background:transparent;
+}
+
 .down-arrow {
   position: absolute;
   z-index: 99999;
@@ -231,7 +235,7 @@ img::selection {
 /* ------------------blur------------------ */
 
 .blur-wrap {
-  margin-top: -3rem;
+  /* margin-top: -3rem; */
   overflow: hidden;
   width: 100%;
   /* position: absolute; */
@@ -244,6 +248,7 @@ img::selection {
 
 .blur {
   display: flex;
+  margin-top: -1rem;
   flex-direction: column;
   transform: scaleX(2);
   filter: blur(10px);
@@ -269,21 +274,29 @@ img::selection {
 
 .about {
   min-width:100%;
+  min-height:100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
   /* min-height: 100vh; */
   font-size: 1.1rem;
   line-height: 1.7rem;
-  margin-top: -1.5rem;
-  padding:4rem 1rem 7rem 1rem;
+  /* margin-top: -1.5rem; */
+  padding:0 0 7rem 0;
   align-self: flex-start;
-  justify-content: center;
+  /* justify-content: center; */
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: transform .2s ease-out;
 }
 
 .about p {
   text-align: justify;
   width: auto;
+}
+
+.show {
+  transform: translateY(-100%);
 }
 
 .header {

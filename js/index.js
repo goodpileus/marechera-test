@@ -33,7 +33,9 @@
 //   document.querySelector('.down-arrow').style.opacity = "0";
 // };
 
-
-function initScroll() {
-  document.querySelector('html').style.overflowY = "scroll";
+var about = document.querySelector('.about');
+function showAbout() {
+  // about.style.transform = "translateY(-100%)";
+  about.classList.toggle("show");
+  // document.querySelector('html').style.overflowY = "scroll";
 }
