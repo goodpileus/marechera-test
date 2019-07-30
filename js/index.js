@@ -39,3 +39,31 @@ function showAbout() {
   about.classList.toggle("show");
   // document.querySelector('html').style.overflowY = "scroll";
 }
+
+const button = document.querySelector('.slide-wrap');
+var width = document.documentElement.clientWidth;
+var container = document.querySelector('.slide-wrap')
+var scrollWidth = container.scrollWidth;
+
+var scrolled = false;
+
+container.addEventListener('scroll', function(event)
+{
+    var container = event.target;
+    if (container.scrollWidth - container.scrollLeft === container.clientWidth)
+    {
+        console.log('scrolled');
+        scrolled = true;
+    } else {
+        console.log('not scrolled');
+        scrolled = false;
+    }
+});
+
+button.onclick = function () {
+  if (scrolled == false) {
+    container.scrollLeft += width;
+  } else {
+    container.scrollLeft -= scrollWidth;
+  }
+};
