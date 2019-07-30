@@ -12,13 +12,13 @@
 
   function showDivs(n) {
     var i;
-    var x = document.getElementsByClassName("slides");
+    var x = document.getElementsByClassName("slide");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+      x[i].style.opacity = "0";
     }
-    x[slideIndex-1].style.display = "block";
+    x[slideIndex-1].style.opacity = "1";
   }
 
   var ul = document.querySelector('ul');
