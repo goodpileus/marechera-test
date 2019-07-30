@@ -36,11 +36,11 @@ var flkty = new Flickity( elem, {
   draggable: true,
   pageDots: false,
   imagesLoaded: true,
-  freeScroll: true,
+  // freeScroll: true,
   lazyLoad: true,
   dragThreshold: 1,
-  autoPlay: 1500,
-  freeScrollFriction: 0.03
+  // autoPlay: 1500,
+  // freeScrollFriction: 0.03
 });
 
 // carousel static click to advance slide
