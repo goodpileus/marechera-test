@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
 <head>
   <title>Marechera</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -39,56 +39,28 @@
     </div>
   </div>
 
-  <div onclick="plusDivs(+1); this.blur();" class="feature image-panel">
-    <div class="slide-wrap">
-      <ul class="slide-list">
-        <li class="slides">
+  <!-- <div onclick="plusDivs(+1); this.blur();" class="feature image-panel"> -->
+  <div class="main-carousel">
+      <div class="carousel-cell">
+        <div class="content">
           <h1>Please text me.<br />
           I am in a mess and need friends quickly. <br />And perhaps tobacco...<br /><br />
           Dambudzo Marechera </h1>
           <div class="caption">This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.</div>
-        </li>
-
-        <!-- <li class="about"><div class="slides">
-          <div class="header">
-            <h1>What do we talk about when we talk about Dambudzo Marechera?</h1>
-            <h2>A crowd-sourced biography</h2>
-          </div>
-          <p>So enduring is Dambudzo Marechera’s reputation as the <i>enfant terrible of African literature</i> yet he is mostly misunderstood. If Marechera had not existed, Zimbabwe would have invented him. And to a degree we have. The person may have been real but the legend that is Dambudzo Marechera, who was part rebel, part iconoclast, is a mountain high <i>papier mâché</i> god we have all created. These constructions of Marechera we share among each other have been ignored in the prevailing scholarship of the author. This is a three-part project, which complicates Marechera’s biography as has been officially told through the <i>DAMBUDZO MARECHERA: A Source Book of his Life and Work</i> first published in 1992 in Harare.</p>
-          <div class="about-list-wrap">
-            <div class="about-list-row">
-              <div class="about-list-label">Part 1:</div>
-              <div>Marechera as created by the press.</div>
-            </div>
-            <div class="about-list-row">
-              <div class="about-list-label">Part 2:</div>
-              <div>Marechera as remembered by young writers across Zimbabwe.</div>
-            </div>
-            <div class="about-list-row">
-              <div class="about-list-label">Part 3:</div>
-              <div>Marechera as everyone’s buddy.</div>
-            </div>
-          </div>
-          <div class="folio">
-            <p>Curator and Editor<br />
-              <span class="folio-name">Dr. Tinashe Mushakavanhu</span>
-            </p>
-
-            <p>Site Design<br />
-              <span class="folio-name">Aidan Quinlan</span>
-            </p>
-
-            <p>Design Consultant<br />
-              <span class="folio-name">Nontsikelelo Mutiti</span>
-          </div>
-        </div></li> -->
-
-        <li class="slides"><img src="img/film2.gif"></li>
-        <li class="slides"><img src="img/3part6.gif"></li>
-        <li class="slides"><img src="img/press.gif"></li>
-        <li class="slides"><img src="img/wanted2.gif"></li>
-      </ul>
-    </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+          <img src="img/film2.gif">
+      </div>
+      <div class="carousel-cell">
+          <img src="img/3part6.gif">
+      </div>
+      <div class="carousel-cell">
+        <img src="img/press.gif">
+      </div>
+      <div class="carousel-cell">
+        <img src="img/wanted2.gif">
+      </div>
   </div>
   <div class="about color2">
     <div class="header">
@@ -130,6 +102,8 @@
 
 </div>
 
+<script  src="js/jquery.min.js"></script>
+<script  src="js/flickity.pkgd.min.js"></script>
 <script  src="js/index.js"></script>
 
 </body>
