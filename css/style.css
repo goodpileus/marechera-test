@@ -25,7 +25,7 @@ body {
   background:var(--black);
   font-family: sans-serif;
   color:var(--white);
-  animation: color1 30s ease-in-out alternate infinite;
+  /* animation: color1 30s ease-in-out alternate infinite; */
   /* overflow-y: scroll; */
 }
 
@@ -77,7 +77,7 @@ ul {
   padding: 2rem 1rem 0 1rem;
   z-index: 999999;
   /* background:yellow; */
-  animation: text-color 30s ease-in-out alternate infinite;
+  /* animation: text-color 30s ease-in-out alternate infinite; */
 }
 
 .about-list-wrap {
@@ -112,13 +112,13 @@ li {
 .color1 {
   background: var(--white);
   color: var(--black);
-  animation: color1 30s ease-in-out alternate infinite;
+  /* animation: color1 30s ease-in-out alternate infinite; */
 }
 
 .color2 {
   background: var(--black);
   color: var(--white);
-  animation: color2 30s ease-in-out alternate infinite;
+  /* animation: color2 30s ease-in-out alternate infinite; */
 }
 
 .main-wrap {
@@ -194,7 +194,7 @@ img::selection {
   position: fixed;
   width:100%;
   bottom:2rem;
-  animation: text 30s ease-in-out alternate infinite;
+  /* animation: text 30s ease-in-out alternate infinite; */
   z-index: 999999;
   text-align: center;
   display: flex;
@@ -226,7 +226,7 @@ img::selection {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid red;
-  animation: color2-border 30s ease-in-out alternate infinite;
+  /* animation: color2-border 30s ease-in-out alternate infinite; */
   transition: bottom .4s ease-out,
               opacity .1s ease-in-out;
 }
