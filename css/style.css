@@ -108,13 +108,14 @@ li {
 
 .slide-wrap {
   min-height:100vh;
+  max-width: 100vw;
   list-style:none;
   display: flex;
   margin:0;
   padding:0;
   /* justify-content: center; */
   /* align-items: center; */
-  /* overflow: hidden; */
+  overflow-x: scroll;
 }
 
 .slide {
@@ -131,7 +132,8 @@ li {
 .slide img{
   overflow: hidden;
   /* max-width: 100vw; */
-  padding:1rem;
+  /* padding:1rem; */
+  padding-top: 1rem;
   max-width: 100%;
   max-height: 100vh;
 }
@@ -140,10 +142,12 @@ li {
   min-height:100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .content h1 {
+  margin: 1rem 0 0 0;
+  padding: 0;
   line-height: 2rem;
   animation: text-switching 3s ease-in-out alternate infinite;
 }
