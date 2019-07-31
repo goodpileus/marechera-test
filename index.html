@@ -27,20 +27,20 @@
 <div class="main-wrap">
 
   <div class="float">
-    <div onclick="showAbout();" class="num color2 about-btn">ⓘ</div>
-    <a class="num color2" href="https://wa.me/263787365051" target="_blank"> +263 787 365 051</a>
+    <div onclick="showAbout();" class="num color2 about-btn"></div>
+    <a class="num color2" id="fittext" href="https://wa.me/263787365051" target="_blank"> +263 787 365 051</a>
   </div>
   <div class="down-arrow"></div>
 
   <!-- <div onclick="plusDivs(+1); this.blur();" class="image-panel"> -->
-  <div class="image-panel">
+  <div onclick="plusDivs(+1); this.blur();" class="image-panel">
     <ul class="slide-wrap">
 
       <li class="slide">
         <div class="content">
-          <h1>Please text me.<br />
-          I am in a mess and need friends quickly. <br />And perhaps tobacco...<br /><br />
-          Dambudzo Marechera </h1>
+          <h1 class="text-switch">Please text me.<br />
+          I am in a mess and need friends quickly. <br />And perhaps tobacco...<br /></h1>
+          <h1>Dambudzo Marechera</h1>
         </div>
         <div class="caption">This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.</div>
       </li>
@@ -51,19 +51,40 @@
         </div>
         <div class="caption">Test caption Test caption Test caption Test caption Test caption Test caption Test caption Test caption Test caption Test caption.</div>
       </li>
+
       <li class="slide">
         <div class="content">
           <img src="img/3part6.gif">
         </div>
       </li>
+
       <li class="slide">
         <div class="content">
-          <img src="img/press.gif">
+          <img src="img/press2.gif">
         </div>
       </li>
+
+      <!-- <li class="slide">
+        <div class="content">
+          <div class="tape"></div>
+        </div>
+      </li> -->
+
       <li class="slide">
         <div class="content">
           <img src="img/wanted2.gif">
+        </div>
+      </li>
+
+      <li class="slide">
+        <div class="content">
+          <img src="img/letter1.gif">
+        </div>
+      </li>
+
+      <li class="slide">
+        <div class="content">
+          <img src="img/letter2.gif">
         </div>
       </li>
 
@@ -73,15 +94,15 @@
 
 
   <div class="about color2" id="about">
-    <div class="blur-wrap">
+    <!-- <div class="blur-wrap">
       <div class="blur">
         <div class="blur1 color1"></div>
         <div class="blur2 color2"></div>
       </div>
-    </div>
+    </div> -->
     <div class="header">
-      <h1>What do we talk about when we talk about Dambudzo Marechera?</h1>
-      <h2>(A crowd-sourced biography)</h2>
+      <h1 class="text-switch">What do we talk about <br />when we talk about Dambudzo Marechera?</h1>
+      <h2>&mdash;A crowd-sourced biography</h2>
     </div>
     <p>So enduring is Dambudzo Marechera’s reputation as the <i>enfant terrible of African literature</i> yet he is mostly misunderstood. If Marechera had not existed, Zimbabwe would have invented him. And to a degree we have. The person may have been real but the legend that is Dambudzo Marechera, who was part rebel, part iconoclast, is a mountain high <i>papier mâché</i> god we have all created. These constructions of Marechera we share among each other have been ignored in the prevailing scholarship of the author. This is a three-part project, which complicates Marechera’s biography as has been officially told through the <i>DAMBUDZO MARECHERA: A Source Book of his Life and Work</i> first published in 1992 in Harare.</p>
 
@@ -102,7 +123,7 @@
 
     <p>Please text any anecdotes, voice notes, memes, photos or anything related to Marechera.</p>
 
-    <div class="folio">
+    <!-- <div class="folio">
       <p>Curator and Editor<br />
         <span class="folio-name">Dr. Tinashe Mushakavanhu</span>
       </p>
@@ -113,11 +134,13 @@
 
       <p>Design Consultant<br />
         <span class="folio-name">Nontsikelelo Mutiti</span>
-    </div>
+    </div> -->
   </div>
 
 </div>
 
+
+<script src="js/fittext.js"></script>
 <script src="js/dragscroll.js"></script>
 <script  src="js/index.js"></script>
 

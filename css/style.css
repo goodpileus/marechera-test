@@ -40,7 +40,7 @@ a:hover{
 }
 
 p {
-  margin:.5rem;
+  margin:0;
   /* max-width: 30rem; */
 }
 
@@ -52,9 +52,10 @@ i {
 h1 {
   font-size: 2rem;
   font-weight: normal;
-  line-height: 2.5rem;
+  line-height: 2rem;
+  /* line-height: 2.5rem; */
   margin:0;
-  padding:0 2rem;
+  /* padding:0 1rem; */
   font-family: 'times', serif;
   font-style: italic;
 }
@@ -62,7 +63,8 @@ h1 {
 h2 {
   font-size:1.2rem;
   font-weight: normal;
-  margin: .5rem 0 1.5rem 0;
+  /* margin: .5rem 0 1.5rem 0; */
+  margin: 0;
   font-style: italic;
 }
 
@@ -118,7 +120,7 @@ li {
   padding:0;
   /* justify-content: center; */
   /* align-items: center; */
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   overflow-y: hidden;
 }
 
@@ -146,15 +148,18 @@ li {
   min-height:100vh;
   max-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .content h1 {
   /* margin: 1rem 0 0 0 */
   padding: 1rem;
-  line-height: 2rem;
-  animation: text-switching 3s ease-in-out alternate infinite;
+}
+
+.text-switch {
+  animation: text-switching 3s linear infinite;
 }
 
 .caption {
@@ -179,14 +184,40 @@ img::selection {
 
 
 
+/* animated tape */
+.tape {
+  background-image: url(../img/tape1.jpeg);
+  background-repeat: repeat-y;
+  background-position: -50%;
+  background-size:1000px;
+
+  animation: tape .2s linear infinite;
+  height:1227px;
+  /* min-height:100vh; */
+  min-width:100%;
+}
+
+@keyframes tape {
+  0% {
+    background-position: 0 -100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+
+
 
 /* ------------------number------------------ */
 
 .float {
   position: fixed;
   max-width:100%;
+  width:100%;
   min-width:100%;
-  bottom:2rem;
+  padding:0 1rem;
+  bottom:1rem;
   animation: text 30s ease-in-out alternate infinite;
   z-index: 999999;
   text-align: center;
@@ -203,12 +234,32 @@ img::selection {
   font-size: 1.8rem;
   line-height: 1.5rem;
   font-family: sans-serif;
-  padding:1rem 1rem 1rem 1rem;
+  /* height:rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
   border-radius: 20px;
+}
+
+#fittext {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem 0 1rem 0;
 }
 
 .about-btn {
   cursor:pointer;
+  /* width:70px; */
+}
+
+.about-btn::before {
+  content: 'ⓘ';
+}
+
+.close::before {
+  content: 'ⓧ';
 }
 
 .float div::selection {
@@ -285,17 +336,17 @@ img::selection {
   min-width:100%;
   min-height:100vh;
   max-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   /* min-height: 100vh; */
   font-size: 1.1rem;
   line-height: 1.7rem;
   /* margin-top: -1.5rem; */
-  padding:0rem 0 7rem 0;
+  padding:1rem 1rem 6rem 1rem;
   align-self: flex-start;
   /* justify-content: center; */
   display: flex;
   opacity:0;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   transition: opacity .2s ease-out;
   /* transform: translateY(-100%); */
@@ -303,21 +354,29 @@ img::selection {
 }
 
 .about .header {
-  padding-top:2rem;
+  /* padding-top:1rem; */
+  text-align: left;
+}
+
+.about h1 {
+  /* margin-bottom: .5rem; */
+  padding-bottom: 2rem;
+}
+
+.about h2 {
+  margin-bottom: 2rem;
 }
 
 .about p {
-  text-align: justify;
-  width: auto;
+  text-align: left;
+  font-size: 1.3rem;
+  /* padding: 1rem; */
+  /* width: auto; */
 }
 
 .show {
   opacity:1;
   z-index: 99999;
-}
-
-.header {
-  text-align: center;
 }
 
 .about-list-wrap {
@@ -350,7 +409,7 @@ img::selection {
 
 .folio {
   padding-top:3rem;
-  padding-bottom:1rem;
+  /* padding-bottom:1rem; */
   font-size: .8rem;
   line-height: 1.3rem;
   display:flex;
@@ -364,7 +423,8 @@ img::selection {
 }
 
 .folio p {
-  text-align: center;
+  /* text-align: center; */
+  margin-bottom: 1rem;
 }
 
 .folio-name {
@@ -414,7 +474,9 @@ img::selection {
 
 @media (min-width:800px) {
   h1 {
-    max-width:42rem;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    max-width: 50rem;
   }
 
   .feature {
@@ -426,31 +488,58 @@ img::selection {
   }
 
   .slide-wrap img{
-    max-width: 35rem;
-    max-height: 100vh;
+    max-width: 40rem;
+    max-height: 85vh;
     /* width:100%; */
   }
 
   .content {
+    justify-content: center;
     align-items: center;
   }
 
   .about {
-    max-width:42rem;
+    max-width:40rem;
     /* overflow-y: hidden; */
   }
 
   .about p {
-    max-width: 70rem;
+    font-size: 130%;
+    line-height: 130%;
+    /* max-width: 90rem; */
   }
 
   .folio {
-    flex-flow: row;
-    justify-content: space-between;
+    /* flex-flow: row; */
+    /* justify-content: space-between; */
   }
 
   .folio p {
+    /* margin: 0; */
+    /* width:33%; */
+  }
+
+
+
+  .num {
     margin: 0;
-    width:33%;
+    /* max-width: 10rem; */
+    /* display: block; */
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-family: sans-serif;
+    /* height:rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    border-radius: 20px;
+  }
+
+  #fittext {
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem 0 1rem 0;
   }
 }
