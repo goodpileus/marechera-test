@@ -26,10 +26,10 @@ function showDivs(n) {
   x[slideIndex-1].style.opacity = "1";
 }
 
-var ul = document.querySelector('ul');
-for (var i = ul.children.length; i >= 0; i--) {
-    ul.appendChild(ul.children[Math.random() * i | 0]);
-}
+// var ul = document.querySelector('ul');
+// for (var i = ul.children.length; i >= 0; i--) {
+//     ul.appendChild(ul.children[Math.random() * i | 0]);
+// }
 //
 // document.onscroll = function(){
 //   document.querySelector('.down-arrow').style.opacity = "0";
@@ -43,6 +43,12 @@ function showAbout() {
   aboutBtn.classList.toggle("close");
 
   // document.querySelector('html').style.overflowY = "scroll";
+}
+
+var caption = document.querySelector('.caption');
+
+function toggleCaption() {
+  caption.classList.toggle("caption-show");
 }
 
 fitText(document.getElementById('fittext'), .92)
