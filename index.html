@@ -29,16 +29,20 @@
   <!-- <div class="size1 active-animatioon"></div> -->
 
   <div class="float">
-    <div onclick="showAbout();" class="num color2 about-btn"></div>
-    <a class="num color2" id="fittext" href="https://wa.me/263787365051" target="_blank"> +263 787 365 051</a>
+    <div class="num-wrap color2">
+      <a onclick="showAbout();" class="num about-btn"></a>
+      <a class="num" href="https://wa.me/263787365051" target="_blank"> +263 787 365 051</a>
+    </div>
   </div>
   <!-- <div class="down-arrow"></div> -->
 
   <!-- <div onclick="plusDivs(+1); this.blur();" class="image-panel"> -->
 
 
-  <div onclick="toggleCaption();" class="caption-btn"></div>
-  <div onclick="plusDivs(+1); this.blur();" class="image-panel">
+  <!-- <div class="caption-btn"></div> -->
+  <!-- <div class="caption">This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.</div> -->
+  <div onclick="plusDivs(+1);" class="slide-btn"></div>
+  <div onclick="this.blur();" class="image-panel">
     <ul class="slide-wrap">
       <li class="slide">
         <div class="content text">
@@ -49,6 +53,7 @@
           <h1 style="padding-left:3rem; margin-top:1rem; width:100%;">Dambudzo Marechera</h1>
           <!-- <img style="position: relative;  float:left; top:-20px; left:160px;" src="img/arrow.gif"> -->
         </div>
+        <div class="caption-btn"></div>
         <div class="caption">This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.</div>
       </li>
 
@@ -62,7 +67,8 @@
         <div class="content">
           <img src="img/letter2.gif">
         </div>
-        <div class="caption">This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.This is a quote from a letter Marechera sent to James Currey his publisher while in prison in Cardiff, Wales. The letter is part of the Heinemann editorial files on House of Hunger and Black Sunlight currently held at University of Reading.</div>
+        <div class="caption-btn"></div>
+        <div class="caption">Test test test test test test test test test</div>
       </li>
 
       <li class="slide">
@@ -80,12 +86,6 @@
       <li class="slide">
         <div class="content">
           <img class="rounded" src="img/film4.gif">
-        </div>
-      </li>
-
-      <li class="slide">
-        <div class="content">
-          <img src="img/3part7.gif">
         </div>
       </li>
 
@@ -160,8 +160,10 @@
         </p>
       </div> -->
 
-
-      <p class="prompt color1">Please text any anecdotes, voice notes, memes, photos or anything related to Marechera to this number:</p>
+      <div class="prompt-wrap">
+        <p class="prompt color1">Please text any anecdotes, voice notes, memes, photos or anything related to Marechera to this number:</p>
+      </div>
+      <div class="about-fade color2"></div>
     </div>
 
   </div>
