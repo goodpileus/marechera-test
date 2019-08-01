@@ -21,6 +21,19 @@ function showDivs(n) {
   x[slideIndex-1].style.zIndex = "999";
 }
 
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            //left
+            plusDivs(-1);
+            break;
+        case 39:
+            //right
+            plusDivs(+1);
+            break;
+    }
+};
+
 
 
 // RANDOM LIST
