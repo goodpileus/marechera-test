@@ -29,14 +29,14 @@ function showDivs(n) {
   x[slideIndex-1].style.zIndex = "999";
 }
 
-// var ul = document.querySelector('ul');
-// for (var i = ul.children.length; i >= 0; i--) {
-//     ul.appendChild(ul.children[Math.random() * i | 0]);
-// }
-//
-// document.onscroll = function(){
-//   document.querySelector('.down-arrow').style.opacity = "0";
-// };
+var random = document.querySelector('.random');
+for (var i = random.children.length; i >= 0; i--) {
+    random.appendChild(random.children[Math.random() * i | 0]);
+}
+
+document.onscroll = function(){
+  document.querySelector('.down-arrow').style.opacity = "0";
+};
 
 var about = document.querySelector('.about');
 var aboutBtn = document.querySelector('.about-btn');
@@ -69,7 +69,7 @@ for (i = 0; i < captionBtn.length; i++) {
   });
 }
 
-fitText(document.getElementById('fittext'), .92)
+// fitText(document.getElementById('fittext'), .92)
 
 // const button = document.querySelector('.slide-wrap');
 // var width = document.documentElement.clientWidth;
