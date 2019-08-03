@@ -88,13 +88,13 @@ li {
 }
 
 .color1 {
-  animation: color1 30s ease-in-out alternate infinite;
-  -webkit-animation: color1 30s ease-in-out alternate infinite;
+  /* animation: color1 30s ease-in-out alternate infinite;
+  -webkit-animation: color1 30s ease-in-out alternate infinite; */
 }
 
 .color2 {
-  animation: color2 30s ease-in-out alternate infinite;
-  -webkit-animation: color2 30s ease-in-out alternate infinite;
+  /* animation: color2 30s ease-in-out alternate infinite;
+  -webkit-animation: color2 30s ease-in-out alternate infinite; */
 }
 
 .underline {
