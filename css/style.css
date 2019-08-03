@@ -24,6 +24,7 @@ body {
   font-family: sans-serif;
   color:var(--white);
   animation: color1 30s ease-in-out alternate infinite;
+  -webkit-animation: color1 30s ease-in-out alternate infinite;
   /* overflow-y: scroll; */
 }
 
@@ -41,6 +42,7 @@ hr {
   border:0;
   min-width:100%;
   animation: color2-border 30s ease-in-out alternate infinite;
+  -webkit-animation: color2-border 30s ease-in-out alternate infinite;
   margin:1.3rem 0 2rem 0;
 }
 
@@ -79,10 +81,12 @@ li {
 
 .color1 {
   animation: color1 30s ease-in-out alternate infinite;
+  -webkit-animation: color1 30s ease-in-out alternate infinite;
 }
 
 .color2 {
   animation: color2 30s ease-in-out alternate infinite;
+  -webkit-animation: color2 30s ease-in-out alternate infinite;
 }
 
 .underline {
@@ -90,6 +94,7 @@ li {
   display: inline;
   line-height: 90%;
   animation: underline 30s ease-in-out alternate infinite;
+  -webkit-animation: underline 30s ease-in-out alternate infinite;
 }
 
 
@@ -168,6 +173,7 @@ li {
 
 .text-switch {
   animation: text-switching 5s linear infinite;
+  -webkit-animation: text-switching 5s linear infinite;
 }
 
 .marechera-name {
@@ -190,6 +196,7 @@ li {
   z-index: 999999;
   /* background:yellow; */
   animation: text-color 30s ease-in-out alternate infinite;
+  -webkit-animation: text-color 30s ease-in-out alternate infinite;
   transition: opacity .2s ease-in-out;
   pointer-events: none;
 }
@@ -241,6 +248,7 @@ img::selection {
   background-size:1000px;
 
   animation: tape .2s linear infinite;
+  -webkit-animation: tape .2s linear infinite;
   height:1227px;
   /* min-height:100vh; */
   min-width:100%;
@@ -268,9 +276,7 @@ img::selection {
   width:100%;
   display: flex;
   justify-content: center;
-  /* min-width:100%; */
   bottom:2rem;
-  /* animation: text 30s ease-in-out alternate infinite; */
   z-index: 999999;
 }
 
@@ -341,6 +347,7 @@ img::selection {
   border-right: 10px solid transparent;
   border-top: 10px solid red;
   animation: color2-border 30s ease-in-out alternate infinite;
+  -webkit-animation: color2-border 30s ease-in-out alternate infinite;
   transition: bottom .4s ease-out,
               opacity .1s ease-in-out;
 }
@@ -454,7 +461,25 @@ img::selection {
           color: var(--black);}
 }
 
+@-webkit-keyframes color1 {
+  0% {    background-color: var(--black);
+          box-shadow: 0 0 16px 16px var(--black);
+          color: var(--white);}
+  100% {  background-color: var(--white);
+          box-shadow: 0 0 16px 16px var(--white);
+          color: var(--black);}
+}
+
 @keyframes color2 {
+  0% {    background-color: var(--white);
+          box-shadow: 0 0 12px 12px var(--white);
+          color: var(--black);}
+  100% {  background-color: var(--black);
+          box-shadow: 0 0 12px 12px var(--black);
+          color: var(--white);}
+}
+
+@-webkit-keyframes color2 {
   0% {    background-color: var(--white);
           box-shadow: 0 0 12px 12px var(--white);
           color: var(--black);}
@@ -468,7 +493,19 @@ img::selection {
   0% {color: var(--white);}
 }
 
+@-webkit-keyframes text-color {
+  100% {color: var(--black);}
+  0% {color: var(--white);}
+}
+
 @keyframes hover {
+  100% {  box-shadow: 0 0 16px 16px var(--white);
+          background-color: var(--white);}
+  0% {    box-shadow: 0 0 16px 16px var(--black);
+          background-color: var(--black);}
+}
+
+@-webkit-keyframes hover {
   100% {  box-shadow: 0 0 16px 16px var(--white);
           background-color: var(--white);}
   0% {    box-shadow: 0 0 16px 16px var(--black);
