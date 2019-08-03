@@ -23,8 +23,6 @@ body {
   background:var(--black);
   font-family: sans-serif;
   color:var(--white);
-  animation: color1 30s ease-in-out alternate infinite;
-  -webkit-animation: color1 30s ease-in-out alternate infinite;
   /* overflow-y: scroll; */
 }
 
@@ -77,6 +75,16 @@ ul {
 li {
   margin: 0;
   padding:0;
+}
+
+.bg1 {
+  animation: bg1 30s ease-in-out alternate infinite;
+  -webkit-animation: bg1 30s ease-in-out alternate infinite;
+}
+
+.bg2 {
+  animation: bg2 30s ease-in-out alternate infinite;
+  -webkit-animation: bg2 30s ease-in-out alternate infinite;
 }
 
 .color1 {
@@ -451,6 +459,34 @@ img::selection {
 
 /* ANIMATIONS
 -----------------------------------------------*/
+@keyframes bg1 {
+  0% {    background-color: var(--black);
+          color: var(--white);}
+  100% {  background-color: var(--white);
+          color: var(--black);}
+}
+
+@-webkit-keyframes bg1 {
+  0% {    background-color: var(--black);
+          color: var(--white);}
+  100% {  background-color: var(--white);
+          color: var(--black);}
+}
+
+@keyframes bg2 {
+  0% {    background-color: var(--white);
+          color: var(--black);}
+  100% {  background-color: var(--black);
+          color: var(--white);}
+}
+
+@-webkit-keyframes bg2 {
+  0% {    background-color: var(--white);
+          color: var(--black);}
+  100% {  background-color: var(--black);
+          color: var(--white);}
+}
+
 
 @keyframes color1 {
   0% {    background-color: var(--black);
