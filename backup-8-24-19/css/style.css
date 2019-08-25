@@ -61,7 +61,7 @@ height:100px;
 h1 {
   font-size: 1.9rem;
   font-weight: normal;
-  /* line-height: 1.9rem; */
+  line-height: 1.9rem;
   margin:0;
   font-family: 'times', serif;
   font-style: italic;
@@ -78,42 +78,31 @@ li {
 }
 
 .bg1 {
-  animation: bg1 10s ease-in-out alternate infinite;
-  -webkit-animation: bg1 10s ease-in-out alternate infinite;
+  animation: bg1 30s ease-in-out alternate infinite;
+  -webkit-animation: bg1 30s ease-in-out alternate infinite;
 }
 
 .bg2 {
-  animation: bg2 10s ease-in-out alternate infinite;
-  -webkit-animation: bg2 10s ease-in-out alternate infinite;
+  animation: bg2 30s ease-in-out alternate infinite;
+  -webkit-animation: bg2 30s ease-in-out alternate infinite;
 }
 
 .color1 {
-  animation: color1 10s ease-in-out alternate infinite;
-  -webkit-animation: color1 10s ease-in-out alternate infinite;
+  animation: color1 30s ease-in-out alternate infinite;
+  -webkit-animation: color1 30s ease-in-out alternate infinite;
 }
 
 .color2 {
-  animation: color2 10s ease-in-out alternate infinite;
-  -webkit-animation: color2 10s ease-in-out alternate infinite;
+  animation: color2 30s ease-in-out alternate infinite;
+  -webkit-animation: color2 30s ease-in-out alternate infinite;
 }
 
 .underline {
   align-self: flex-start;
   display: inline;
-  /* margin-bottom: -6px */
-  /* animation: underline 5s ease-in-out alternate infinite; */
-  /* -webkit-animation: underline 5s ease-in-out alternate infinite; */
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.prompt1 {
-  color:var(--white);
-}
-
-.prompt2{
-  color:var(--black);
-  text-align: right;
+  line-height: 90%;
+  animation: underline 30s ease-in-out alternate infinite;
+  -webkit-animation: underline 30s ease-in-out alternate infinite;
 }
 
 
@@ -122,8 +111,8 @@ li {
 -----------------------------------------------*/
 .slide-btn-wrap {
   display: flex;
-  position: absolute;
-  top:0;
+  position: fixed;
+  top:4rem;
   left:0;
   height:100%;
   z-index: 9999;
@@ -150,38 +139,11 @@ li {
 } */
 
 .slide-wrap {
-  /* position: relative; */
-  top:0;
-  left:0;
-  min-height: 73vh;
-  /* max-height: 60vh; */
-  max-width: 100vw;
-  /* min-width: 100vw; */
-  list-style:none;
-  display: flex;
-  margin:1rem 0 2rem 0;
-  /* background-image: url(../img/paperbg2.gif); */
-  /* background-size: 130% 130%; */
-  background-position: center;
-  padding:0;
-}
-
-.slide {
-  min-width: 100%;
-  position: absolute;
-  left:0;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  transition: opacity .3s ease-in-out;
-}
-
-.prompt-wrap {
   position: absolute;
   top:0;
   left:0;
-  min-height: 60vh;
-  max-height: 60vh;
+  min-height: 100vh;
+  max-height: 100vh;
   max-width: 100vw;
   min-width: 100vw;
   list-style:none;
@@ -193,7 +155,7 @@ li {
   padding:0;
 }
 
-.prompt-inner {
+.slide {
   min-width: 100%;
   position: absolute;
   left:0;
@@ -208,7 +170,7 @@ li {
   padding:1rem;
   padding-top: 1rem;
   max-width: 100%;
-  max-height: 70vh;
+  max-height: 100vh;
   opacity:.75;
 }
 
@@ -221,7 +183,7 @@ li {
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -297,6 +259,32 @@ li {
 img::selection {
   background:transparent;
 }
+
+
+/* ANIMATED TAPE SCROLL */
+.tape {
+  background-image: url(../img/tape1.jpeg);
+  background-repeat: repeat-y;
+  background-position: -50%;
+  background-size:1000px;
+
+  animation: tape .2s linear infinite;
+  -webkit-animation: tape .2s linear infinite;
+  height:1227px;
+  /* min-height:100vh; */
+  min-width:100%;
+}
+
+@keyframes tape {
+  0% {
+    background-position: 0 -100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+
 
 
 
@@ -399,9 +387,7 @@ img::selection {
   min-width:100%;
   min-height:100vh;
   overflow-y: auto;
-  overflow-x: hidden;
   max-height: 100vh;
-  max-width: 100vw;
   font-size: 1.1rem;
   line-height: 1.7rem;
   align-self: flex-start;
@@ -462,7 +448,7 @@ img::selection {
   font-style: italic;
 }
 
-.about-prompt {
+.prompt {
   margin:3rem 1rem 0 1rem;
   padding:.5rem 1rem;
   max-width: 100%;
@@ -489,10 +475,6 @@ img::selection {
 @keyframes bg1 {
   0% {    background-color: var(--black);
           color: var(--white);}
-  45% {   background-color: var(--black);
-          color: var(--white);}
-  55% {  background-color: var(--white);
-          color: var(--black);}
   100% {  background-color: var(--white);
           color: var(--black);}
 }
@@ -500,10 +482,6 @@ img::selection {
 @-webkit-keyframes bg1 {
   0% {    background-color: var(--black);
           color: var(--white);}
-  45% {   background-color: var(--black);
-          color: var(--white);}
-  55% {  background-color: var(--white);
-          color: var(--black);}
   100% {  background-color: var(--white);
           color: var(--black);}
 }
@@ -511,10 +489,6 @@ img::selection {
 @keyframes bg2 {
   0% {    background-color: var(--white);
           color: var(--black);}
-  45% {    background-color: var(--white);
-          color: var(--black);}
-  55% {  background-color: var(--black);
-          color: var(--white);}
   100% {  background-color: var(--black);
           color: var(--white);}
 }
@@ -522,33 +496,45 @@ img::selection {
 @-webkit-keyframes bg2 {
   0% {    background-color: var(--white);
           color: var(--black);}
-  45% {   background-color: var(--white);
-          color: var(--black);}
-  55% {  background-color: var(--black);
-          color: var(--white);}
   100% {  background-color: var(--black);
           color: var(--white);}
 }
 
 
 @keyframes color1 {
-  0% {    color: var(--white);}
-  100% {  color: var(--black);}
+  0% {    background-color: var(--black);
+          /* box-shadow: 0 0 16px 16px var(--black); */
+          color: var(--white);}
+  100% {  background-color: var(--white);
+          /* box-shadow: 0 0 16px 16px var(--white); */
+          color: var(--black);}
 }
 
 @-webkit-keyframes color1 {
-  0% {    color: var(--white);}
-  100% {  color: var(--black);}
+  0% {    background-color: var(--black);
+          /* box-shadow: 0 0 16px 16px var(--black); */
+          color: var(--white);}
+  100% {  background-color: var(--white);
+          /* box-shadow: 0 0 16px 16px var(--white); */
+          color: var(--black);}
 }
 
 @keyframes color2 {
-  0% {    color: var(--black);}
-  100% {  color: var(--white);}
+  0% {    background-color: var(--white);
+          /* box-shadow: 0 0 12px 12px var(--white); */
+          color: var(--black);}
+  100% {  background-color: var(--black);
+          /* box-shadow: 0 0 12px 12px var(--black); */
+          color: var(--white);}
 }
 
 @-webkit-keyframes color2 {
-  0% {    color: var(--black);}
-  100% {  color: var(--white);}
+  0% {    background-color: var(--white);
+          /* box-shadow: 0 0 12px 12px var(--white); */
+          color: var(--black);}
+  100% {  background-color: var(--black);
+          /* box-shadow: 0 0 12px 12px var(--black); */
+          color: var(--white);}
 }
 
 @keyframes text-color {
@@ -591,14 +577,8 @@ img::selection {
 
 @keyframes underline {
   0% {
-    border-bottom: 2px solid var(--black);
-  }
-  /* 45% {
-    border-bottom: 2px solid var(--black);
-  }
-  55% {
     border-bottom: 2px solid var(--white);
-  } */
+  }
   100% {
     border-bottom: 2px solid var(--black);
   }
@@ -615,15 +595,19 @@ img::selection {
     line-height: 2.4rem;
   }
 
+  .feature {
+    width:100%;
+  }
+
   .slide-wrap {
-    /* margin-bottom: 5rem; */
+    margin-bottom: 5rem;
 
   }
 
   .slide-wrap img{
     max-width: 40rem;
-    /* max-height: 80vh; */
-    /* margin-bottom: 5rem; */
+    max-height: 80vh;
+    margin-bottom: 5rem;
   }
 
   .content {
@@ -643,7 +627,6 @@ img::selection {
 
   .caption-btn {
     display: block;
-    display: none;
   }
 
   .caption {
@@ -667,8 +650,8 @@ img::selection {
     line-height: 130%;
   }
 
-  .about-prompt-wrap {
-    /* position: fixed; */
+  .prompt-wrap {
+    position: fixed;
     bottom:9rem;
     display: flex;
     justify-content: center;
@@ -680,5 +663,12 @@ img::selection {
     line-height: 2.5rem;
     max-width: 450px;
     padding:.6rem;
+  }
+
+  #fittext {
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem 0 1rem 0;
   }
 }
