@@ -41,13 +41,14 @@ document.onkeydown = function(e) {
     }
 };
 
-var interval = setInterval(timer, 10000);
 
-function timer() {
+setTimeout(function(){
+  var interval = setInterval(timer, 10000);
 
-  plusDivs(+1);
-}
-
+  function timer() {
+    plusDivs(+1);
+  }
+}, 5000);
 
 
 
