@@ -56,10 +56,12 @@ setTimeout(function(){
 // ---------------------------------------------
 var about = document.querySelector('.about');
 var aboutBtn = document.querySelector('.about-btn');
+var html = document.querySelector("html");
 
 function showAbout() {
   about.classList.toggle("show");
-  aboutBtn.classList.toggle("close");
+  html.classList.toggle("stop-scrolling");
+  // aboutBtn.classList.toggle("close");
 }
 
 
