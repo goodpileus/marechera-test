@@ -41,7 +41,12 @@ document.onkeydown = function(e) {
     }
 };
 
+var interval = setInterval(timer, 10000);
 
+function timer() {
+
+  plusDivs(+1);
+}
 
 
 
