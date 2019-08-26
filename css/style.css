@@ -79,7 +79,7 @@ li {
   height:100%;
   max-height: 100vh;
   overflow: hidden;
-  position:relative;
+  position:fixed;
   /* overflow: hidden; */
 }
 
