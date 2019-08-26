@@ -346,7 +346,7 @@ li {
   background-image: url(../img/paperbg2.gif);
   background-position: center;
   background-attachment: fixed;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .about-inner {
