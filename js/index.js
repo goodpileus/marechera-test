@@ -50,6 +50,21 @@ setTimeout(function(){
   }
 }, 5000);
 
+var prompt1 = document.querySelector('.prompt1');
+var prompt2 = document.querySelector('.prompt2');
+
+setTimeout(function(){
+  var interval = setInterval(timer, 10000);
+
+  function timer() {
+    prompt2.classList.toggle("in-front");
+    prompt1.classList.toggle("in-front");
+  }
+}, 5000);
+
+setTimeout(function(){
+    prompt2.classList.toggle("in-front");
+}, 5000);
 
 
 // ABOUT OPEN/CLOSE
