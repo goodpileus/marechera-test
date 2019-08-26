@@ -151,6 +151,44 @@ li {
 
 
 
+/* NUMBER
+-----------------------------------------------*/
+
+.float {
+  position: fixed;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  bottom:2rem;
+  z-index: 999999;
+}
+
+.num-wrap {
+  max-width:50rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+  padding:0 .5rem;
+}
+
+.num {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:1rem .5rem;
+  max-width: 300px;
+}
+
+
+
+
 /* SLIDES
 -----------------------------------------------*/
 .slide-btn-wrap {
@@ -283,46 +321,9 @@ li {
 
 
 
-/* NUMBER
------------------------------------------------*/
-
-.float {
-  position: fixed;
-  width:100%;
-  display: flex;
-  justify-content: center;
-  bottom:2rem;
-  z-index: 999999;
-}
-
-.num-wrap {
-  max-width:50rem;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 20px;
-  justify-content: center;
-  padding:0 .5rem;
-}
-
-.num {
-  margin: 0;
-  font-size: 2rem;
-  line-height: 1.5rem;
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:1rem .5rem;
-  max-width: 300px;
-}
-
-
 
 /* ABOUT
 -----------------------------------------------*/
-
 .about {
   position: absolute;
   top:0;
@@ -333,7 +334,7 @@ li {
   font-size: 1.1rem;
   line-height: 1.7rem;
   align-self: flex-start;
-  display: flex;
+  display: none;
   opacity:0;
   flex-direction: column;
   transition: opacity .2s ease-out;
@@ -343,6 +344,7 @@ li {
   background-image: url(../img/paperbg2.gif);
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .about-inner {
@@ -355,6 +357,8 @@ li {
 
 .show {
   opacity:1;
+  overflow: auto;
+  display: flex;
   z-index: 99999;
 }
 
