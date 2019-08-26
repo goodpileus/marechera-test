@@ -15,7 +15,6 @@
 html {
   font-family: 'pt sans',sans-serif;
   scroll-behavior: smooth;
-  position:relative;
 }
 
 body {
@@ -77,8 +76,10 @@ li {
 }
 
 .stop-scrolling {
+  height:100%;
   max-height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
+  position:relative;
   /* overflow: hidden; */
 }
 
