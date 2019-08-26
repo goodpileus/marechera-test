@@ -78,6 +78,8 @@ li {
 .stop-scrolling {
   height:100%;
   max-height: 100vh;
+  width:100%;
+  max-width: 100vw;
   overflow: hidden;
   position:fixed;
   /* overflow: hidden; */
@@ -98,10 +100,12 @@ li {
   display: flex;
   margin:0;
   background-image: url(../img/paperbg2.gif);
-  background-position: center;
+  background-position: left;
   background-attachment: fixed;
   padding:0;
   cursor: help;
+  opacity:0;
+  transition: opacity .4s ease-out;
 }
 
 .prompt-inner {
@@ -175,7 +179,7 @@ li {
 
 .float {
   position: fixed;
-  width:100%;
+  width:100vw;
   display: flex;
   justify-content: center;
   bottom:2rem;
@@ -356,12 +360,12 @@ li {
   display: flex;
   opacity:0;
   flex-direction: column;
-  transition: opacity .2s ease-out;
+  transition: opacity .4s ease-out;
   font-size: 1.3rem;
   z-index: -999;
   text-align: left;
   background-image: url(../img/paperbg2.gif);
-  background-position: center;
+  background-position: left;
   background-attachment: fixed;
   /* overflow: hidden; */
 }
@@ -376,7 +380,7 @@ li {
 
 .show {
   opacity:1;
-  overflow: auto;
+  /* overflow: auto; */
   /* display: flex; */
   z-index: 99999;
 }

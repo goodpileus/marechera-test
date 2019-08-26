@@ -70,12 +70,17 @@ setTimeout(function(){
 // ABOUT OPEN/CLOSE
 // ---------------------------------------------
 var about = document.querySelector('.about');
+var prompt = document.querySelector('.prompt-wrap');
 var aboutBtn = document.querySelector('.about-btn');
 var html = document.querySelector("html");
 
 function showAbout() {
   about.classList.toggle("show");
+  prompt.classList.toggle("show");
   html.classList.toggle("stop-scrolling");
+
+  setTimeout(function(){
+  }, 0);
   // aboutBtn.classList.toggle("close");
 }
 
