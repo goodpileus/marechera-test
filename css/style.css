@@ -492,6 +492,15 @@ img::selection {
   z-index: 99999;
 }
 
+.close-about {
+  position:fixed;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  z-index: 9999999;
+  padding:1rem;
+}
+
 .about-list-wrap {
   margin:1rem auto;
   padding:0;
