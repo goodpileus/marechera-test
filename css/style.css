@@ -130,7 +130,8 @@ li {
   color:var(--white);
   position: relative;
   font-family: 'pt serif', serif;
-  /* opacity: 1; */
+  opacity: 1;
+  transition: opacity .1s ease-in-out;
   font-style: italic;
 }
 
@@ -138,13 +139,14 @@ li {
   color:var(--black);
   align-self: center;
   position: absolute;
-  /* transition: opacity .1s ease-in-out; */
-  /* opacity: 1; */
+  transition: opacity .1s ease-in-out;
+  opacity: 1;
   z-index: -1;
 }
 
 .in-front {
-  z-index: 999;
+  /* z-index: 999; */
+  opacity: 0;
 }
 
 .marechera-name {
