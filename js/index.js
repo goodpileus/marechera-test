@@ -84,7 +84,7 @@ for (i = 0; i < captionBtn.length; i++) {
 
 // UNUSED FIT TEXT
 // ---------------------------------------------
-fitText(document.getElementById('fittext'), .88)
+// fitText(document.getElementById('fittext'), .88)
 
 
 
