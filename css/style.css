@@ -99,6 +99,7 @@ li {
   background-attachment: fixed;
   padding:0;
   cursor: help;
+  overflow: hidden;
 }
 
 .prompt-inner {
