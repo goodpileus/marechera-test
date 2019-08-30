@@ -99,7 +99,8 @@ li {
   list-style:none;
   display: flex;
   margin:0;
-  background-image: url(../img/paperbg2.gif);
+  background-image: url(../img/bg9.gif);
+  background-size: auto;
   background-position: left;
   background-attachment: fixed;
   padding:0;
@@ -176,7 +177,6 @@ li {
 
 /* NUMBER
 -----------------------------------------------*/
-
 .float {
   position: fixed;
   width:100vw;
@@ -364,7 +364,7 @@ li {
   font-size: 1.3rem;
   z-index: -999;
   text-align: left;
-  background-image: url(../img/paperbg2.gif);
+  background-image: url(../img/bg9.gif);
   background-position: left;
   background-attachment: fixed;
   /* overflow: hidden; */
@@ -400,7 +400,7 @@ li {
 .close-about-btn {
   position: relative;
   text-align: center;
-  width:6rem;
+  width:4rem;
   height:2.5rem;
   cursor:pointer;
   padding:.5rem;
@@ -413,7 +413,7 @@ li {
 }
 
 .st1{
-  stroke-width:1.5;
+  stroke-width:2;
   stroke-linecap:round;
   /* transition: stroke .1s ease;  */
 }
