@@ -448,13 +448,14 @@ li {
 .open-about {
   font-size:2rem;
   width:3rem;
-  color:var(--black);
-  padding:.21rem .7rem .21rem .7rem;
+  /* color:var(--black); */
+  padding:.21rem .6rem .17rem .7rem;
   /* font-family: 'pt serif', serif; */
-  /* border:1px solid var(--black); */
+  /* border-left:1px solid var(--black); */
+  /* border-right:1px solid var(--black); */
   border-radius: 20px;
   text-align: center;
-  /* background:var(--black); */
+  /* background:var(--white); */
 }
 
 
