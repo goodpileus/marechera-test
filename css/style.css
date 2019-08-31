@@ -40,7 +40,7 @@ hr {
   min-width:100%;
   animation: border 10s ease-in-out alternate infinite;
   -webkit-animation: border 10s ease-in-out alternate infinite;
-  margin:2rem 0 2rem 0;
+  margin:3rem 0 3rem 0;
 }
 
 p {
@@ -72,7 +72,7 @@ li {
   align-self: flex-start;
   display: inline-block;
   cursor: pointer;
-  cursor: help;
+  /* cursor: help; */
   border-bottom: 1px solid var(--white);
 }
 
@@ -393,32 +393,21 @@ li {
 }
 
 .about p {
-  text-align: left;
+  /* text-align: left; */
 }
 
 .about h1 {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   font-family: 'pt serif', serif;
   font-style: italic;
-  margin-bottom: 16rem;
+  /* margin-bottom: 1rem; */
+  text-align: left;
+  width:100%;
+  /* max-width: 55rem; */
+  margin:2rem auto 2rem auto;
   text-align: center;
-  padding:1rem;
-}
-
-.h1-bracket-l {
-  border-top:1px solid var(--black);
-  border-bottom:1px solid var(--black);
-  border-left:1px solid var(--black);
-  border-radius: 20px 0px 0px 20px;
-  min-width:20px;
-}
-
-.h1-bracket-r {
-  border-top:1px solid var(--black);
-  border-bottom:1px solid var(--black);
-  border-right:1px solid var(--black);
-  border-radius: 0px 20px 20px 0px;
-  min-width:20px;
+  /* background: green; */
+  /* padding:1rem; */
 }
 
 .show {
@@ -453,14 +442,7 @@ li {
   position: relative;
   text-align: center;
   width:3rem;
-  /* height:2.5rem; */
   padding:.7rem .7rem .3rem .7rem;
-}
-
-.close-about-btn svg {
-  position: relative;
-  height:1.5rem;
-  width:90%;
 }
 
 .st1{
@@ -469,18 +451,18 @@ li {
   /* transition: stroke .1s ease;  */
 }
 
-.close-about-wrap:hover .st1{
+.close-about:hover .st1{
   stroke:var(--hover);
 }
 
 .about-list-wrap {
-  margin:2rem auto 0 auto;
+  margin:2rem auto 2rem auto;
   padding:0;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  text-align: left;
   max-width: 55rem;
+  width:100%;
+  text-align: left;
 }
 
 .about-list-row {
@@ -496,13 +478,28 @@ li {
   font-style: italic;
 }
 
+.about-hr {
+  text-align: center;
+  margin: 3rem;
+}
+
+.about-hr svg {
+  max-height: 1rem;
+  stroke: none;
+}
+
 .about-prompt {
-  margin:3rem 1rem 0 1rem;
-  padding:.5rem 1rem;
-  max-width: 100%;
-  max-width: 670px;
-  z-index: 999999;
-  border-radius: 20px;
+  max-width: 55rem;
+  margin:2rem auto 2rem auto;
+}
+
+.colophon {
+  font-size:1.2rem;
+  /* width:100%; */
+  max-width: 55rem;
+  margin:2rem auto 0 auto;
+  text-align:center;
+  opacity:.65;
 }
 
 
@@ -624,31 +621,47 @@ li {
 
 /* text-color animation */
 @keyframes color1 {
-  0% {    color: var(--white);}
-  48% {   color: var(--white);}
-  52% {   color: var(--black);}
-  100% {  color: var(--black);}
+  0% {    color: var(--white);
+          fill: var(--white);}
+  48% {   color: var(--white);
+          fill: var(--white);}
+  52% {   color: var(--black);
+          fill: var(--black);}
+  100% {  color: var(--black);
+          fill: var(--black);}
 }
 
 @-webkit-keyframes color1 {
-  0% {    color: var(--white);}
-  48% {   color: var(--white);}
-  52% {   color: var(--black);}
-  100% {  color: var(--black);}
+  0% {    color: var(--white);
+          fill: var(--white);}
+  48% {   color: var(--white);
+          fill: var(--white);}
+  52% {   color: var(--black);
+          fill: var(--black);}
+  100% {  color: var(--black);
+          fill: var(--black);}
 }
 
 @keyframes color2 {
-  0% {    color: var(--black);}
-  48% {   color: var(--black);}
-  52% {   color: var(--white);}
-  100% {  color: var(--white);}
+  0% {    color: var(--black);
+          fill: var(--black);}
+  48% {   color: var(--black);
+          fill: var(--black);}
+  52% {   color: var(--white);
+          fill: var(--white);}
+  100% {  color: var(--white);
+          fill: var(--white);}
 }
 
 @-webkit-keyframes color2 {
-  0% {    color: var(--black);}
-  48% {   color: var(--black);}
-  52% {   color: var(--white);}
-  100% {  color: var(--white);}
+  0% {    color: var(--black);
+          fill: var(--black);}
+  48% {   color: var(--black);
+          fill: var(--black);}
+  52% {   color: var(--white);
+          fill: var(--white);}
+  100% {  color: var(--white);
+          fill: var(--white);}
 }
 
 /* border-bottom animation */
@@ -769,14 +782,6 @@ img::selection {
     line-height: 130%;
   }
 
-  .about-prompt-wrap {
-    /* position: fixed; */
-    bottom:4rem;
-    display: flex;
-    justify-content: center;
-    width:100%;
-  }
-
   #fittext {
     min-width: 25rem;
     max-width: 25rem;
@@ -789,7 +794,15 @@ img::selection {
     padding:.6rem;
   }
 
+  .colophon {
+    text-align:left;
+  }
+
   .phone-br {
     display:none;
+  }
+
+  .about-hr {
+    margin: 2rem;
   }
 }
