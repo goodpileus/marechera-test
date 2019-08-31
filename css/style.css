@@ -5,10 +5,11 @@
 
 :root {
   --black: #000;
-  --white: #E8E9EC;
+  --white: #edebe2;
   --hover: #48884d;
 
   --brown: #261f1d;
+  --morewhite: #E8E9EC;
   --lighttan: #edebe2;
   --tan: #E8E1D0;
 }
@@ -292,11 +293,8 @@ li {
   overflow: hidden;
   max-width: 100%;
   max-height: 69vh;
-  opacity: .85;
-}
-
-.rounded {
-  border-radius: 30px;
+  opacity: .75;
+  border-radius: 2px;
 }
 
 .content {
