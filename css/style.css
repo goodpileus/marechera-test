@@ -5,10 +5,11 @@
 
 :root {
   --black: #000;
-  --white: #edebe2;
+  --white: #E8E9EC;
   --hover: #48884d;
 
   --brown: #261f1d;
+  --lighttan: #edebe2;
   --tan: #E8E1D0;
 }
 
@@ -80,7 +81,7 @@ li {
   max-height: 100vh;
   width:100%;
   max-width: 100vw;
-  overflow: hidden;
+  overflow-y: scroll;
   position:fixed;
   /* overflow: hidden; */
 }
@@ -99,9 +100,9 @@ li {
   list-style:none;
   display: flex;
   margin:0;
-  background-image: url(../img/bg9.gif);
-  background-size: auto;
-  background-position: left;
+  background-image: url(../img/bg11.gif);
+  /* background-size: auto; */
+  background-position: bottom;
   background-attachment: fixed;
   padding:0;
   cursor: help;
@@ -116,10 +117,10 @@ li {
   top:1rem;
   left:0;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
 }
 
 .prompt-container {
@@ -137,18 +138,28 @@ li {
   position: relative;
   font-family: 'pt serif', serif;
   font-style: italic;
+  position: fixed;
+  top:6rem;
+  width:100%;
+  /* padding-left: 1rem; */
   opacity: 1;
+  margin-bottom: 3rem;
+  text-align: center;
   transition: opacity .1s ease-in-out;
 }
 
 .prompt2{
   color:var(--black);
-  align-self: center;
+  /* align-self: center; */
   font-family: 'pt serif', serif;
   font-style: italic;
-  position: absolute;
+  position: fixed;
   /* padding-left: 1rem; */
   text-align: center;
+  width:100%;
+  /* right:0; */
+  /* padding-left: 1rem; */
+  bottom:8rem;
   /* left:1rem; */
   transition: opacity .1s ease-in-out;
   opacity: 1;
@@ -162,6 +173,9 @@ li {
 
 .marechera-name {
   width:100%;
+  position: fixed;
+  top:50%;
+  transform: translateY(-50%;);
   text-align: center;
   padding:0 1rem;
   font-family: 'pt serif', serif;
@@ -179,7 +193,7 @@ li {
 -----------------------------------------------*/
 .float {
   position: fixed;
-  width:100vw;
+  width:100%;
   display: flex;
   justify-content: center;
   bottom:2rem;
@@ -248,7 +262,7 @@ li {
   list-style: none;
   display: flex;
   margin: 0;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   background-position: center;
   padding: 0;
@@ -360,13 +374,14 @@ li {
   display: flex;
   opacity:0;
   flex-direction: column;
-  transition: opacity .4s ease-out;
+  transition: opacity .4s ease;
   font-size: 1.3rem;
   z-index: -999;
   text-align: left;
-  background-image: url(../img/bg9.gif);
-  background-position: left;
+  background-image: url(../img/bg11.gif);
+  background-position: bottom;
   background-attachment: fixed;
+  /* background-size: contain; */
   /* overflow: hidden; */
 }
 
@@ -385,35 +400,43 @@ li {
   z-index: 99999;
 }
 
-.close-about-wrap {
+.about-btn {
   position:fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999999;
+  z-index: 99999;
   left:50%;
   top:1rem;
   transform: translateX(-50%);
+  cursor:pointer;
   border-radius: 20px;
 }
 
-.close-about-btn {
+.open-about {
+  font-size:2.3rem;
+  color:var(--black);
+  padding:.15rem .7rem .3rem .7rem;
+
+}
+
+
+.close-about {
   position: relative;
   text-align: center;
-  width:4rem;
-  height:2.5rem;
-  cursor:pointer;
-  padding:.5rem;
+  width:3rem;
+  /* height:2.5rem; */
+  padding:.7rem .7rem .3rem .7rem;
 }
 
 .close-about-btn svg {
   position: relative;
-  height:100%;
+  height:1.5rem;
   width:90%;
 }
 
 .st1{
-  stroke-width:2;
+  stroke-width:3;
   stroke-linecap:round;
   /* transition: stroke .1s ease;  */
 }
