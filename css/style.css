@@ -87,6 +87,21 @@ li {
   /* overflow: hidden; */
 }
 
+#loading {
+  background-color: var(--black);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 9999999999;
+}
+
+#main-wrap {
+  opacity:0;
+  transition: opacity 5s ease-out;
+}
+
 
 /* PROMPT
 -----------------------------------------------*/
@@ -504,12 +519,17 @@ li {
   transform: translate(-50%, -50%);
   opacity: 0;
   /* display: none; */
+  border-radius: 4px;
   transition: opacity .4s ease-out;
 }
 
 .about-list-row:hover img {
   /* display: block; */
   opacity: .55;
+}
+
+.aboutlist-row:focus img{
+  opacity:0;
 }
 
 .about-hr {
@@ -825,6 +845,10 @@ img::selection {
 
   .about p {
     line-height: 130%;
+  }
+
+  .about-list-label {
+    min-width:7rem;
   }
 
   #fittext {

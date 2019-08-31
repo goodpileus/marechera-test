@@ -1,4 +1,14 @@
 
+
+// only loads once the window completely loads
+window.onload = function() {
+  console.log(':-)');
+
+  // hide loading mask
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("main-wrap").style.opacity = "1";
+}
+
 // RANDOM LIST
 // ---------------------------------------------
 var random = document.querySelector('.random');
