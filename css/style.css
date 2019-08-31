@@ -294,7 +294,7 @@ li {
   max-width: 100%;
   max-height: 69vh;
   opacity: .75;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .content {
@@ -498,11 +498,16 @@ li {
   margin:2rem auto 2rem auto;
 }
 
+.colophon-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 55rem;
+  margin:2rem auto 0 auto;
+}
+
 .colophon {
   font-size:1.2rem;
   /* width:100%; */
-  max-width: 55rem;
-  margin:2rem auto 0 auto;
   text-align:center;
   opacity:.65;
 }
