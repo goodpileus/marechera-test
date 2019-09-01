@@ -398,6 +398,7 @@ li {
 .st1{
   stroke-width:2.7;
   stroke-linecap:round;
+  fill:none;
   /* transition: stroke .1s ease;  */
 }
 
