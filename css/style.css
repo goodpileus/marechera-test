@@ -250,7 +250,11 @@ li {
 
 .slide-btn {
   height:100%;
-  width:50%;
+  width:100%;
+}
+
+.prev-btn{
+  display: none;
 }
 
 .next-btn:hover {
@@ -730,6 +734,10 @@ img::selection {
 
   .prompt2 {
     bottom:23%;
+  }
+
+  .prev-btn{
+    display: block;
   }
 
   .slide-wrap {
