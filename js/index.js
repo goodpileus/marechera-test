@@ -1,5 +1,3 @@
-
-
 // only loads once the window completely loads
 window.onload = function() {
   console.log(':-)');
@@ -95,56 +93,6 @@ function showAbout() {
 }
 
 
-
-// CAPTION BUTTON (SHOW/HIDE)
-// ---------------------------------------------
-var captionBtn = document.getElementsByClassName("caption-btn");
-var i;
-
-for (i = 0; i < captionBtn.length; i++) {
-  captionBtn[i].addEventListener("click", function() {
-
-    // show/hide caption on mouse click
-    var caption = this.nextElementSibling;
-    caption.classList.toggle("caption-show");
-  });
-}
-
-
-
-// UNUSED FIT TEXT
-// ---------------------------------------------
-// fitText(document.getElementById('fittext'), .88)
-
-
-
-
-// UNUSED SCROLL
-// ---------------------------------------------
-// const button = document.querySelector('.slide-wrap');
-// var width = document.documentElement.clientWidth;
-// var container = document.querySelector('.slide-wrap')
-// var scrollWidth = container.scrollWidth;
-//
-// var scrolled = false;
-//
-// container.addEventListener('scroll', function(event)
-// {
-//     var container = event.target;
-//     if (container.scrollWidth - container.scrollLeft === container.clientWidth)
-//     {
-//         console.log('scrolled');
-//         scrolled = true;
-//     } else {
-//         console.log('not scrolled');
-//         scrolled = false;
-//     }
-// });
-//
-// button.onclick = function () {
-//   if (scrolled == false) {
-//     container.scrollLeft += width;
-//   } else {
-//     container.scrollLeft -= scrollWidth;
-//   }
+// document.onscroll = function(){
+//   document.querySelector('.down-arrow').style.opacity = "0";
 // };
