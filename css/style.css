@@ -276,7 +276,7 @@ li {
   list-style: none;
   display: flex;
   margin: 0;
-  margin-top: 3.3rem;
+  margin-top: 3.9rem;
   /* margin-bottom: 2rem; */
   background-position: center;
   padding: 0;
@@ -762,15 +762,15 @@ img::selection {
   }
 
   .slide-wrap {
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 
   .slide-wrap img{
-    max-width: 40rem;
   }
 
   .slide img{
-    max-height: 73vh;
+    max-width: 40rem;
+    /* max-height: 65vh; */
   }
 
   .content {
@@ -786,15 +786,6 @@ img::selection {
   .text h1 {
     font-size: 2.1rem;
     line-height: 2.1rem;
-  }
-
-  .caption-btn {
-    display: block;
-    display: none;
-  }
-
-  .caption {
-    display: block;
   }
 
   .about {
